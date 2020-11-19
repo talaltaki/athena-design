@@ -1,0 +1,55 @@
+footer .sub-text {
+    color: var(--mainGray);
+}
+
+footer #email {
+    background: #FFF;
+    border: none;
+    padding: 1rem;
+    width: 35vw;
+    border-radius: 5px;
+    box-shadow: 3px 3px 50px 5px rgba(0, 0, 0, 0.1)
+}
+
+footer form {
+    position: relative;
+}
+
+footer form #started-btn {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    height: 80%;
+    border-radius: 5px;
+    color: #FFF;
+    border: none;
+    background: linear-gradient(120deg, #2af598, #009efd);
+    display: inline-block;
+    text-align: center;
+    min-width: 130px;
+}
+
+footer ::placeholder {
+    color: #a7a7a7;
+    font-size: .8rem;
+    font-weight: 300;
+    font: montserrat, sans-serif;
+}
+
+@media (max-width:992px) {
+    footer #email {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 768px) {
+    footer #email {
+        width: 80vw;
+    }
+}
+
+@media (max-width:576px) {
+    footer #email {
+        width: 95vw;
+    }
+}

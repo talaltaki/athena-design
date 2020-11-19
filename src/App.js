@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SubscriptionForm from "./Components/Footer/SubscriptionForm/SubscriptionForm";
+import Footer from "./Components/Footer/MainFooter/Footer";
 function App() {
   return (
     <div>
-      <h1>hello test</h1>
+      <footer>
+        <SubscriptionForm />
+        <Footer />
+      </footer>
     </div>
   );
 }

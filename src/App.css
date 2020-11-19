@@ -4,6 +4,11 @@
   --lightViolate: #46285c;
   --titleColor: #0d052e;
 }
+
+* {
+  background-color: #FAFFFD;
+}
+
 body {
   font-family: "Montserrat", sans-serif !important;
 }
