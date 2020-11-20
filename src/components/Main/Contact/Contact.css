@@ -1,0 +1,7 @@
+.contact-btn {
+  border-radius: 20px 0;
+}
+
+.contact-btn:focus {
+  outline: none;
+}

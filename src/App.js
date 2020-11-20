@@ -15,6 +15,7 @@ function App() {
         <SubscriptionForm />
         <Footer />
       </footer>
+
     </div>
   );
 }
