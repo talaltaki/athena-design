@@ -1,0 +1,20 @@
+.btn-common{
+    background: linear-gradient(97deg, rgba(42,245,152,1) 0%, rgba(0,158,253,1) 100%);
+    font-weight: 600 ;
+    color: #ffffff;
+    border-radius: none !important;
+    border-top-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    transition: all linear .5s ;
+    border: none;
+    padding: 10px 20px;
+    transition: all linear .5s;
+}
+.btn-common:hover{
+    background: linear-gradient(194deg, rgba(42,245,152,1) 100%, rgba(0,158,253,1) 0%); 
+}
+
+.btn-common:focus{
+    outline: none !important;
+    border: none !important;
+}
