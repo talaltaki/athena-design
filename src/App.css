@@ -4,6 +4,7 @@
   --lightViolate: #46285c;
   --titleColor: #0d052e;
 }
+
 body {
   font-family: "Montserrat", sans-serif !important;
 }
@@ -15,6 +16,7 @@ body {
   background: linear-gradient(#684efb, #5a00dd);
   background: linear-gradient(#4e5cff, #ae4eff);
 }
+
 .title {
   font-family: "Yeseva One", cursive !important;
   color: var(--titleColor);
