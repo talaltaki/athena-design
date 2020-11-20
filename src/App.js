@@ -8,10 +8,10 @@ import Services from "./Components/Main/Services/Services";
 
 function App() {
   return (
-    <div> 
-     <Header/>
-    <Services/>
-       <footer> 
+    <div>
+      <Header />
+      <Services />
+      <footer>
         <SubscriptionForm />
         <Footer />
       </footer>
