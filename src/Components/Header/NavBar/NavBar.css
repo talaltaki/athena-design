@@ -1,0 +1,28 @@
+.navbar-light .navbar-nav .nav-link{
+    margin: 2px 5px;
+    padding: 8px 20px !important;
+    border-top-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    transition: all linear .5s !important;
+    font-weight: 600 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    background: linear-gradient(97deg, rgba(42,245,152,1) 0%, rgba(0,158,253,1) 100%);
+    color: white !important;
+}
+.navbar-toggler-icon{
+ 
+}
+
+.my-toggler{
+    background: url("./menu-2-outline.svg") !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    background-position: center !important;
+    padding: 5px !important;
+}
+.navbar-light .navbar-toggler{
+    border-color: transparent !important;
+}
