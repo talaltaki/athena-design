@@ -31,21 +31,21 @@ const Services = () => {
     return (
         <section className="service py-5" >
             <div className="service-line">
-            <div className="container">
-                <div className="row mb-5">
-                    <div className="col-12 col-md-6 offset-md-3 text-center">
-                        <h2 className="title section-title">What we do</h2>
-                        <p className="my-2">Our main focus is to make the User Experience very simple and easy. Simplicity is our Strength.</p>
+                <div className="container">
+                    <div className="row mb-5">
+                        <div className="col-12 col-md-6 offset-md-3 text-center">
+                            <h2 className="title section-title">What we do</h2>
+                            <p className="my-2">Our main focus is to make the User Experience very simple and easy. Simplicity is our Strength.</p>
+                        </div>
+                    </div>
+                    <div className="row no-gutters justify-content-center">
+                        {
+                            serviceData.map(service => <ServiceCard service={service} key={service.id}></ServiceCard>)
+                        }
                     </div>
                 </div>
-                <div className="row no-gutters justify-content-center">
-                    {
-                        serviceData.map(service => <ServiceCard service={service} key={service.id}></ServiceCard>)
-                    }
-                </div>
             </div>
-            </div>
-           
+
         </section>
 
     );

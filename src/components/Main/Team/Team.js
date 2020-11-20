@@ -1,5 +1,7 @@
 import React from "react";
+import { Row } from "react-bootstrap";
 import "./Team.css";
+import TeamCard from "./TeamCard";
 
 const Team = () => {
   const teamCard = [
@@ -39,36 +41,42 @@ const Team = () => {
   ];
 
   return (
-    <div className="container mt-5">
-      <h1 className="text-center font-weight-bolder">
+    <div className="container mt-5 pt-5">
+      <h1 className="text-center title font-weight-bolder">
         Choose Your Dedicated Team
       </h1>
 
-      <div className="d-flex justify-content-around mt-5">
-        {teamCard.map((team) => (
-          <div
-            className="card card-border border-0 shadow py-4"
-            style={{ width: "20rem" }}
-          >
-            <div className="card-body text-center">
-              <h1 className="font-weight-bolder" style={{ fontSize: "50px" }}>
-                {team.price}
-              </h1>
-              <h5 className="text-secondary pb-3">{team.type}</h5>
-              <hr className="w-75 bg-primary" />
-              <p className="h5 pt-3">{team.feature1}</p>
-              <p className="h5 pt-3">{team.feature2}</p>
-              <p className="h5 pt-3">{team.feature3}</p>
-              <p className="h5 pt-3">{team.feature4}</p>
-              <p className="h5 pt-3">{team.feature5}</p>
-              <p className="h5 pt-3">{team.feature6}</p>
-              <p className="h5 pt-3">{team.feature7}</p>
+      <Row className="m-0">
+        {
+          teamCard.map(team => <TeamCard team={team} key={team.price} />)
+        }
+      </Row>
 
-              <button className="mt-5">Order Now</button>
-            </div>
-          </div>
-        ))}
-      </div>
+      {/* <div className="row">
+        {teamCard.map((team) => (
+          // <div
+          //   className="card col-12 col-md-6 col-lg-4 card-border border-0 shadow py-4"
+          //   style={{ width: "100%" }}
+          // >
+          //   <div className="card-body text-center">
+          //     <h1 className="font-weight-bolder" style={{ fontSize: "50px" }}>
+          //       {team.price}
+          //     </h1>
+          //     <h5 className="text-secondary pb-3">{team.type}</h5>
+          //     <hr className="w-75 bg-primary" />
+          //     <p className="h5 pt-3">{team.feature1}</p>
+          //     <p className="h5 pt-3">{team.feature2}</p>
+          //     <p className="h5 pt-3">{team.feature3}</p>
+          //     <p className="h5 pt-3">{team.feature4}</p>
+          //     <p className="h5 pt-3">{team.feature5}</p>
+          //     <p className="h5 pt-3">{team.feature6}</p>
+          //     <p className="h5 pt-3">{team.feature7}</p>
+          //     <button className="mt-5 btn-common">Order Now</button>
+          //   </div>
+          // </div>
+          <TeamCard
+        ))} */}
+      {/* </div> */}
     </div>
   );
 };
