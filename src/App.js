@@ -4,13 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SubscriptionForm from "./Components/Footer/SubscriptionForm/SubscriptionForm";
 import Footer from "./Components/Footer/MainFooter/Footer";
 import Header from "./Components/Header/Header";
-import Services from "./Components/Main/Services/Services";
+import Main from "./Components/Main/Main";
 
 function App() {
   return (
     <div>
       <Header />
-      <Services />
+      <Main />
       <footer>
         <SubscriptionForm />
         <Footer />
